@@ -5,6 +5,28 @@
 [![Skill](https://github.com/alexcpn/speckit_okf/actions/workflows/skill.yml/badge.svg)](https://github.com/alexcpn/speckit_okf/actions/workflows/skill.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+> [!IMPORTANT]
+> **This repository has moved into [catalogify](https://github.com/alexcpn/catalogify) and is archived.**
+> The Spec Kit extension is now built from catalogify and attached to every
+> catalogify release, so it no longer drifts from the CLI and the skill. The
+> last release here was 0.6.0.
+>
+> **Spec Kit users**: reinstall from the catalogify release. The extension ID
+> (`okf`), the commands and the config location are unchanged:
+>
+> ```bash
+> specify extension add okf --force --from \
+>   https://github.com/alexcpn/catalogify/releases/download/v0.9.2/speckit-okf-0.9.2.zip
+> ```
+>
+> **Agent Skill and Claude plugin users**: switch to catalogify's own skill
+> (`uv tool install catalogify && catalogify install`). Remove this repository's
+> `okf-knowledge-bundle` skill first, so the two don't compete for the same
+> requests.
+>
+> See [Using it with Spec Kit](https://github.com/alexcpn/catalogify#using-it-with-spec-kit).
+> Everything below describes this repository as it was at 0.6.0.
+
 Turns your AI coding agent into an **OKF enrichment agent**: it analyzes a source-code repository and generates a conformant [Open Knowledge Format (OKF v0.1)](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) knowledge bundle — a directory of cross-linked markdown concepts with YAML frontmatter describing your services, modules, APIs, data models, and operations.
 
 Because OKF bundles are plain markdown in git, the generated bundle is readable by humans, diffable in PRs, and consumable by other agents without any bespoke tooling.

@@ -1,5 +1,15 @@
 # Changelog
 
+## Moved to catalogify — 2026-09-22
+
+This repository is archived. The Spec Kit extension is now built from
+[catalogify](https://github.com/alexcpn/catalogify) and released with it,
+starting at [v0.9.2](https://github.com/alexcpn/catalogify/releases/tag/v0.9.2).
+Compared with 0.6.0 it adds catalogify's shallow-clone warning and the
+narrower V4 check, runs the shell scripts through `bash` (a zip install drops
+the executable bit), and gives each command a description in the manifest.
+Further changes are recorded in catalogify's releases.
+
 ## [0.6.0](https://github.com/alexcpn/speckit_okf/releases/tag/v0.6.0) — 2026-09-07
 
 Ported from the companion [catalogify](https://github.com/alexcpn/catalogify)
